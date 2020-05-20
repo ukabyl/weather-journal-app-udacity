@@ -2,7 +2,7 @@
 
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
 const SERVER_URL = 'http://localhost:3000';
-const API_KEY = '&appid=ba960daefc10c56dc6f7608b7d568c3e';
+const API_KEY = '&appid=ba960daefc10c56dc6f7608b7d568c3e&units=imperial';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -82,5 +82,5 @@ async function updateUI() {
     const data = await response.json();
     content.innerHTML = 'Content: ' + data.content;
     date.innerHTML = 'Date: ' +  data.date;
-    temp.innerHTML = 'Temperature: ' + data.temp;
+    temp.innerHTML = 'Temperature: ' + data.temp + ' in Fahrenheit';
 }
