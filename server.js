@@ -29,7 +29,7 @@ app.use(express.static('website'));
 const PORT = 3000;
 
 app.listen(PORT, () => {
-    console.log('SERVER is RUNNING')
+    console.log(`SERVER is RUNNING at port ${PORT}`)
 });
 
 app.post('/post-data', (req, res) => {

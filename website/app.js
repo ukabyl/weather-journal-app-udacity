@@ -6,7 +6,7 @@ const API_KEY = '&appid=ba960daefc10c56dc6f7608b7d568c3e&units=imperial';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth() + 1) + '.'+ d.getDate()+'.'+ d.getFullYear();
 
 
 // Create variables from DOM elements
